@@ -1,6 +1,6 @@
 # URL Shortening API
 
-This is a URL shortening API built using PHP and MySQL. It allows you to easily encode long URLs into short, shareable links and decode short URLs back to their original form.
+This is a URL shortening API built using PHP and MySQL. It allows you to easily encode long URLs into short and decode short URLs back to their original form.
 
 ## Getting Started
 

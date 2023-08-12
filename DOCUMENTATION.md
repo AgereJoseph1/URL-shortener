@@ -32,7 +32,7 @@ To install and run the URL Shortening API on your local machine, follow these st
 2. Navigate to the project directory:
 
     ```bash
-    cd your-repo
+    cd URL-shortener
     ```
 
 3. Configure your local development environment with PHP and MySQL.
@@ -72,7 +72,7 @@ Content-Type: application/json
 {
     "status": "success",
     "data": {
-        "short_url": "http://shrt.est/ABC123"
+        "short_url": "http://shrt.est/PpE7NB"
     }
 }
 ```
@@ -98,7 +98,7 @@ Retrieve the original URL from a short link.
 **Request:**
 
 ```http
-GET /URL-shortener/decode?short_url=http://shrt.est/ABC123
+GET /URL-shortener/decode?short_url=http://shrt.est/PpE7NB
 ```
 
 **Response (Success):**
