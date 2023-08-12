@@ -1,6 +1,6 @@
 # URL Shortening API
 
-This is a URL shortening API built using PHP and MySQL. It allows you to easily encode long URLs into short and decode short URLs back to their original form.
+This is a URL-shortening API built using PHP and MySQL. It allows you to easily encode long URLs into short and decode short URLs back to their original form.
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ For detailed instructions on how to use the API and its endpoints, refer to the 
 
 ## API Testing
 
-You can use API testing tools like Postman to test the endpoints and functionalities of the URL Shortening API.
+You can use API testing tools like Postman or any other one that you are familiar with to test the endpoints and functionalities of the URL Shortening API.
 
 ## License
 
