@@ -1,6 +1,3 @@
-Absolutely, here's the revised API documentation without the table of contents:
-
----
 
 # URL Shortening API Documentation
 
@@ -37,7 +34,7 @@ To install and run the URL Shortening API on your local machine, follow these st
 
 3. Configure your local development environment with PHP and MySQL.
 
-4. Import the database schema using the provided SQL file (e.g., `links.sql`).
+4. Import the database schema using the provided SQL file (e.g., `URL_shortener.sql`).
 
 5. Update the database connection settings in the `Database.php` file inside the config directory.
 6. Start a local development server using PHP's built-in server:
@@ -53,14 +50,10 @@ To install and run the URL Shortening API on your local machine, follow these st
 Encode a long URL into a short link.
 
 - **Method:** POST
-- **Endpoint:** `/URL-shortener/encode`
+- **URL:** `http://your-domain.com/URL-shortener/encode`
 
-**Request:**
-
-```http
-POST /URL-shortener/encode
-Content-Type: application/json
-
+**Request body:**
+```json
 {
     "url": "https://example.com/long-url"
 }
@@ -93,13 +86,9 @@ Content-Type: application/json
 Retrieve the original URL from a short link.
 
 - **Method:** GET
-- **Endpoint:** `/URL-shortener/decode`
+- **Endpoint:** `URL-shortener/decode?short_url=http://shrt.est/PpE7NB`
 
 **Request:**
-
-```http
-GET /URL-shortener/decode?short_url=http://shrt.est/PpE7NB
-```
 
 **Response (Success):**
 
@@ -131,13 +120,7 @@ Responses from the API are in JSON format and contain the following fields:
 - `data`: Contains the relevant data for a successful request.
 - `error`: Provides an error message for unsuccessful requests.
 
-## Examples
 
-For detailed examples of how to use the URL Shortening API, please refer to the [Examples.md](Examples.md) file.
-
-## Error Handling
-
-The API provides meaningful error messages and appropriate HTTP status codes to indicate the nature of the error. Refer to the [ErrorHandling.md](ErrorHandling.md) file for more information on error handling.
 
 ## Testing with API Tools
 
