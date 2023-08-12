@@ -136,5 +136,5 @@ Responses from the API are in JSON format and contain the following fields:
 
 ## Testing with API Tools
 
-You can test the URL Shortening API using popular API testing tools like Postman. Use these tools to send requests to the API endpoints and observe the responses. This enables you to validate the functionality and behavior of the API before integrating it into your applications.
+You can test the URL Shortening API using popular API testing tools like Postman or any other API testing that you are familiar with. Use these tools to send requests to the API endpoints and observe the responses. This enables you to validate the functionality and behavior of the API before integrating it into your applications.
 
