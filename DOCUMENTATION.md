@@ -1,4 +1,3 @@
-
 # URL Shortening API Documentation
 
 Welcome to the URL Shortening API documentation. This guide will walk you through the installation, usage, and endpoints of the URL Shortening service. This service allows you to encode lengthy URLs into short, shareable links and decode them back to their original form.
@@ -36,7 +35,19 @@ To install and run the URL Shortening API on your local machine, follow these st
 
 4. Import the database schema using the provided SQL file (e.g., `URL_shortener.sql`).
 
-5. Update the database connection settings in the `Database.php` file inside the config directory.
+5. Update the database connection settings in the `Database.php` file inside the config directory.Update the values of these variables inside the Database.php file:
+
+    ```
+    // config/Database.php
+    
+        $host = "your-hostname";
+        $db_name = "your-database-name";
+        $username = "your-username";
+        $password = "your-password";
+      
+
+    ```
+
 6. Start a local development server using PHP's built-in server:
 
     ```bash
@@ -120,11 +131,7 @@ Responses from the API are in JSON format and contain the following fields:
 - `data`: Contains the relevant data for a successful request.
 - `error`: Provides an error message for unsuccessful requests.
 
-
-
 ## Testing with API Tools
 
 You can test the URL Shortening API using popular API testing tools like Postman. Use these tools to send requests to the API endpoints and observe the responses. This enables you to validate the functionality and behavior of the API before integrating it into your applications.
-
----
 
