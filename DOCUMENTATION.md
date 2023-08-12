@@ -26,7 +26,7 @@ To install and run the URL Shortening API on your local machine, follow these st
 1. Clone the repository from GitHub:
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/AgereJoseph1/URL-shortener.git
     ```
 
 2. Navigate to the project directory:
@@ -37,10 +37,9 @@ To install and run the URL Shortening API on your local machine, follow these st
 
 3. Configure your local development environment with PHP and MySQL.
 
-4. Import the database schema using the provided SQL file (e.g., `shortener.sql`).
+4. Import the database schema using the provided SQL file (e.g., `links.sql`).
 
-5. Update the database connection settings in the `config.php` file.
-
+5. Update the database connection settings in the `Database.php` file inside the config directory.
 6. Start a local development server using PHP's built-in server:
 
     ```bash
@@ -59,7 +58,7 @@ Encode a long URL into a short link.
 **Request:**
 
 ```http
-POST /URL-shortener/encode HTTP/1.1
+POST /URL-shortener/encode
 Content-Type: application/json
 
 {
@@ -99,7 +98,7 @@ Retrieve the original URL from a short link.
 **Request:**
 
 ```http
-GET /URL-shortener/decode?short_url=http://shrt.est/ABC123 HTTP/1.1
+GET /URL-shortener/decode?short_url=http://shrt.est/ABC123
 ```
 
 **Response (Success):**
