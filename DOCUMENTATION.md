@@ -1,6 +1,6 @@
 # URL Shortening API Documentation
 
-Welcome to the URL Shortening API documentation. This guide will walk you through the installation, usage, and endpoints of the URL Shortening service. This service allows you to encode lengthy URLs into short, shareable links and decode them back to their original form.
+This guide will walk you through the installation, usage, and endpoints of the URL Shortening service. This service allows you to encode lengthy URLs into short, shareable links and decode them back to their original form.
 
 ## Introduction
 
@@ -37,16 +37,14 @@ To install and run the URL Shortening API on your local machine, follow these st
 
 5. Update the database connection settings in the `Database.php` file inside the config directory.Update the values of these variables inside the Database.php file:
 
-    ```
-    // config/Database.php
-    
-        $host = "your-hostname";
-        $db_name = "your-database-name";
-        $username = "your-username";
-        $password = "your-password";
-      
 
-    ```
+| Variable       | Function of the Variable         | Example                    |
+|----------------|----------------------------------|----------------------------|
+| `$host`         | Hostname of the MySQL database   | `localhost`                |
+| `$db_name`     | Name of the database             | `url_shortener`            |
+| `$username`    | MySQL database username          | `root`                     |
+| `$password`    | MySQL database password          | `mysecretpassword`         |
+ 
 
 6. Start a local development server using PHP's built-in server:
 
@@ -86,7 +84,7 @@ Encode a long URL into a short link.
 ```json
 {
     "status": "error",
-    "error": {
+    "data": {
         "message": "Invalid URL"
     }
 }
@@ -122,7 +120,7 @@ None required, just pass in your query string parameters as above and hit enter!
 ```json
 {
     "status": "error",
-    "error": {
+    "data": {
         "message": "Short URL not found"
     }
 }
