@@ -61,7 +61,7 @@ To install and run the URL Shortening API on your local machine, follow these st
 Encode a long URL into a short link.
 
 - **Method:** POST
-- **URL:** `http://your-domain.com/URL-shortener/encode`
+- **Endpoint:** `http://your-domain.com/URL-shortener/encode`
 
 **Request body:**
 ```json
@@ -97,9 +97,14 @@ Encode a long URL into a short link.
 Retrieve the original URL from a short link.
 
 - **Method:** GET
-- **Endpoint:** `URL-shortener/decode?short_url=http://shrt.est/PpE7NB`
+- **Endpoint:** `URL-shortener/decode`
 
 **Request:**
+
+```bash
+curl http://your-domain.com/URL-shortener/decode?short_url=http://shrt.est/PpE7NB
+```
+None required, just pass in your query string parameters as above and hit enter!
 
 **Response (Success):**
 
